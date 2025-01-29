@@ -85,7 +85,7 @@ export default function Team() {
       >
         <div className="container mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-amber-500 mb-10 pt-10">
-            Meet Our Team
+            Our Team
           </h2>
 
           <div 
@@ -103,7 +103,7 @@ export default function Team() {
                   alt={`${member.name} - ${member.role}`}
                   width={250}
                   height={250}
-                  className="w-full h-48 object-fit-cover"
+                  className="w-full h-48 object-contain"
                   priority={index < 4} // Prioritize loading first 4 images
                   loading={index < 4 ? 'eager' : 'lazy'}
                   fetchPriority={index < 4 ? 'high' : 'low'}

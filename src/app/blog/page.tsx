@@ -107,7 +107,7 @@ export default function Blog() {
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Coming Soon</h3>
             <p className="text-gray-400 mb-4">Stay tuned for more insightful blogs on cutting-edge topics!</p>
             <button className="bg-gray-800 text-gray-300 px-4 py-2 rounded-lg font-medium hover:bg-gray-600 transition-colors duration-300">
-              Notify Me
+              Comming Soon 
             </button>
           </div>
       </div>

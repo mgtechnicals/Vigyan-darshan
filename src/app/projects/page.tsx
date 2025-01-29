@@ -20,7 +20,7 @@ const projects = [
     {
     id: 'project1',
     title: 'Project 1',
-    image: '/img1.jpg',
+    image: '/project1.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.',
     link: '/projects/project1'
   },
