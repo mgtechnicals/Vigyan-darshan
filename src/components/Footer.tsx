@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Footer = () => {
   return (
-    <footer className="mt-auto bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white py-12 relative pt-40">
+    <footer className="mt-auto bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white py-12 relative pt-10">
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 mix-blend-overlay"
         style={{
@@ -37,8 +37,9 @@ const Footer = () => {
                 Vigyan Darshan
               </Link>
             </div>
-            <p className="text-gray-300 text-sm leading-relaxed bg-black/30 p-4 rounded-xl shadow-2xl backdrop-blur-sm transform transition duration-300 hover:scale-105 hover:bg-black/40">
-              Exploring the intersection of science, philosophy, and spirituality through engaging content and meaningful discussions.
+            <p className="text-gray-100 text-xl leading-relaxed bg-black/30 p-4 rounded-xl shadow-2xl backdrop-blur-sm transform transition duration-300 hover:scale-105 hover:bg-black/40">
+              Exploring the intersection of science, philosophy, and
+              spirituality through engaging content and meaningful discussions.
             </p>
           </div>
 
@@ -47,7 +48,7 @@ const Footer = () => {
             className="text-center animate-fade-in-down"
             style={{ animationDelay: "200ms" }}
           >
-            <h3 className="text-lg font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-400">
+            <h3 className="text-2xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-400">
               Quick Links
             </h3>
             <div className="flex flex-col space-y-2">
@@ -55,12 +56,12 @@ const Footer = () => {
                 { name: "Home", path: "/" },
                 { name: "About Us", path: "/about" },
                 { name: "Contact Us", path: "/contact" },
-                { name: "Blog", path: "/blog" },
+                { name: "Our Team", path: "/team" },
               ].map((link) => (
                 <Link
                   key={link.name}
                   href={link.path}
-                  className="text-white px-3 py-1.5 rounded-lg text-xs font-medium hover:bg-gray-700 transition duration-300 hover:scale-105 bg-black/30 backdrop-blur-sm shadow-lg hover:shadow-xl transform hover:translate-x-1"
+                  className="text-white px-3 py-2 hover:text-amber-500 flex-row items-center "
                 >
                   {link.name}
                 </Link>
@@ -70,33 +71,37 @@ const Footer = () => {
 
           {/* Social Links */}
           <div
-            className="text-center md:text-right animate-fade-in-down"
+            className="text-center md:text-center animate-fade-in-down"
             style={{ animationDelay: "400ms" }}
           >
             <h3 className="text-lg font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-amber-500">
               Connect With Us
             </h3>
-            <div className="flex justify-center md:justify-end gap-3 text-sm">
+            <div className="flex justify-center gap-5 text-sm">
               {[
                 {
                   href: "https://www.facebook.com",
                   icon: "facebook-f",
                   label: "Facebook",
+                  bgColor: "bg-[#1877f2]", // Facebook blue
                 },
                 {
                   href: "https://x.com/Vigyan_darshan",
                   icon: "twitter",
                   label: "Twitter",
+                  bgColor: "bg-[#1da1f2]", // Twitter blue
                 },
                 {
                   href: "https://www.instagram.com/vigyandarshan/",
                   icon: "instagram",
                   label: "Instagram",
+                  bgColor: "bg-[#e1306c]", // Instagram pink
                 },
                 {
                   href: "https://www.youtube.com/@Vigyandarshan",
                   icon: "youtube",
                   label: "YouTube",
+                  bgColor: "bg-[#ff0000]", // YouTube red
                 },
               ].map((social) => (
                 <Link
@@ -105,10 +110,10 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="w-8 h-8 flex items-center justify-center bg-gradient-to-r from-gray-800 to-black hover:from-black hover:to-gray-800 rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-110 backdrop-blur-sm group"
+                  className={`p-2 rounded-full ${social.bgColor} hover:bg-opacity-80 transition duration-300`}
                 >
                   <i
-                    className={`fab fa-${social.icon} text-xs group-hover:animate-pulse drop-shadow-[0_0_8px_rgba(255,255,255,0.5)]`}
+                    className={`fab fa-${social.icon} text-white text-xl`}
                     aria-hidden="true"
                   ></i>
                 </Link>

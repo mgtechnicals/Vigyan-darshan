@@ -20,7 +20,7 @@ const projects = [
     {
     id: 'project1',
     title: 'Project 1',
-    image: '/project1.jpg',
+    image: '/img1.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.',
     link: '/projects/project1'
   },
@@ -87,7 +87,7 @@ export default function Projects() {
                   alt={`${project.title} preview`}
                   width={400}
                   height={300}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-scale-down"
                   priority={index < 4}
                   loading={index < 4 ? 'eager' : 'lazy'}
                 />

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+// import Image from 'next/image';
+// import Link from 'next/link';
 import { Metadata } from 'next';
 
 // Add metadata for SEO
@@ -9,32 +9,32 @@ export const metadata: Metadata = {
 };
 
 export default function Blog() {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Latest Discoveries in Quantum Physics",
-      date: "2024-01-15",
-      image: "/img1.jpg",
-      excerpt: "Exploring groundbreaking discoveries in quantum mechanics and their implications for modern science.",
-      slug: "quantum-physics-discoveries",
-    },
-    {
-      id: 2,
-      title: "Advances in Space Exploration",
-      date: "2024-01-12",
-      image: "/img2.jpg",
-      excerpt: "Recent developments in space technology and upcoming missions to explore our solar system.",
-      slug: "space-exploration-advances",
-    },
-    {
-      id: 3,
-      title: "Environmental Science Breakthroughs",
-      date: "2024-01-10",
-      image: "/img3.jpg",
-      excerpt: "New research findings in environmental science and their impact on climate change solutions.",
-      slug: "environmental-science-breakthroughs",
-    },
-  ];
+  // const blogPosts = [
+  //   {
+  //     id: 1,
+  //     title: "Latest Discoveries in Quantum Physics",
+  //     date: "2024-01-15",
+  //     image: "",
+  //     excerpt: "Exploring groundbreaking discoveries in quantum mechanics and their implications for modern science.",
+  //     slug: "quantum-physics-discoveries",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Advances in Space Exploration",
+  //     date: "2024-01-12",
+  //     image: "",
+  //     excerpt: "Recent developments in space technology and upcoming missions to explore our solar system.",
+  //     slug: "space-exploration-advances",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Environmental Science Breakthroughs",
+  //     date: "2024-01-10",
+  //     image: "",
+  //     excerpt: "New research findings in environmental science and their impact on climate change solutions.",
+  //     slug: "environmental-science-breakthroughs",
+  //   },
+  // ];
 
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black">
@@ -54,7 +54,7 @@ export default function Blog() {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-          {blogPosts.map((post) => (
+          {/* {blogPosts.map((post) => (
             <div key={post.id} className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
               <div className="relative h-48 sm:h-56">
                 <Image
@@ -99,9 +99,10 @@ export default function Blog() {
                 </Link>
               </div>
             </div>
-          ))}
+          ))} */}
 
           {/* Coming Soon Card */}
+        </div>
           <div className="bg-gray-700 rounded-xl shadow-xl p-6 flex flex-col justify-center items-center text-center">
             <h3 className="text-xl font-semibold text-gray-200 mb-4">Coming Soon</h3>
             <p className="text-gray-400 mb-4">Stay tuned for more insightful blogs on cutting-edge topics!</p>
@@ -109,7 +110,6 @@ export default function Blog() {
               Notify Me
             </button>
           </div>
-        </div>
       </div>
     </div>
   );

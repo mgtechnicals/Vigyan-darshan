@@ -13,17 +13,26 @@ export const metadata: Metadata = {
 
 const allImages = [
   { src: "/img1.jpg", alt: "Gallery Image 1" },
-  { src: "/img2.jpg", alt: "Gallery Image 2" },
+  { src: "/gallery17.jpg", alt: "Gallery Image 2" },
   { src: "/img3.jpg", alt: "Gallery Image 3" },
   { src: "/img4.jpg", alt: "Gallery Image 4" },
   { src: "/img5.jpg", alt: "Gallery Image 5" },
-  { src: "/img1.jpg", alt: "Gallery Image 6" },
-  { src: "/img2.jpg", alt: "Gallery Image 7" },
-  { src: "/img3.jpg", alt: "Gallery Image 8" },
-  { src: "/img4.jpg", alt: "Gallery Image 9" },
-  { src: "/img5.jpg", alt: "Gallery Image 10" },
-  { src: "/img1.jpg", alt: "Gallery Image 11" },
-  { src: "/img2.jpg", alt: "Gallery Image 12" }
+  { src: "/gallery1.jpg", alt: "Gallery Image 6" },
+  { src: "/gallery2.jpg", alt: "Gallery Image 7" },
+  { src: "/gallery3.jpg", alt: "Gallery Image 8" },
+  { src: "/gallery4.jpg", alt: "Gallery Image 9" },
+  { src: "/gallery5.jpg", alt: "Gallery Image 10" },
+  { src: "/gallery6.jpg", alt: "Gallery Image 11" },
+  { src: "/gallery8.jpg", alt: "Gallery Image 12" },
+  { src: "/gallery9.jpg", alt: "Gallery Image 13" },
+  { src: "/gallery10.jpg", alt: "Gallery Image 14" },
+  { src: "/gallery11.jpg", alt: "Gallery Image 15" },
+  { src: "/gallery12.jpg", alt: "Gallery Image 16" },
+  { src: "/gallery13.jpg", alt: "Gallery Image 17" },
+  { src: "/gallery14.jpg", alt: "Gallery Image 18" },
+  { src: "/img2.jpg", alt: "Gallery Image 19" },
+  { src: "/gallery15.jpg", alt: "Gallery Image 20" },
+  { src: "/gallery16.jpg", alt: "Gallery Image 21" },
 ];
 
 export default function Gallery() {

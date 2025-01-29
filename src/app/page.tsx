@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from 'next'
+import Cards from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: 'Vigyan Darshan - Exploring Science, Philosophy & Spirituality',
@@ -16,9 +17,6 @@ const featuredImages = [
   { src: "/img1.jpg", alt: "Gallery Image 1" },
   { src: "/img2.jpg", alt: "Gallery Image 2" },
   { src: "/img3.jpg", alt: "Gallery Image 3" },
-  { src: "/img4.jpg", alt: "Gallery Image 4" },
-  { src: "/img5.jpg", alt: "Gallery Image 5" },
-  { src: "/img1.jpg", alt: "Gallery Image 6" },
 ];
 
 export default function Home() {
@@ -44,36 +42,37 @@ export default function Home() {
               loading="eager"
             />
           </div>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mt-4 animate-fade-in-down text-center px-4 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-300 p-2">
+          <h1 className="mb-4 text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-3xl font-bold animate-fade-in-down text-center px-4 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-300 p-2">
             Vigyan Darshan
           </h1>
+          <Cards/>
         </div>
-        <div className="min-h-screen">
+        <div className="min-h-screen ">
           <section className="py-8 sm:py-10 md:py-16 lg:py-20 text-white">
             <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8">
               <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-4 text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Vigyan Darshan is such an institution where all types of science from ancient to modern will be discussed logically (cosmology to Philoshophy , Mathematical to medical & Psychology to Technology ! we will touch all topic physical to spritual )
               </p>
-              <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12 md:mb-16 lg:mb-24 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-100 to-amber-300">
-                Subscribe to our Youtube Channel
+            </div>
+            <div className="w-full border-t-2 border-gray-700 my-12 md:my-16 shadow-md"></div>
+          </section>
+          <div className="container mx-auto text-center px-1 mb-8">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-8 sm:mb-12 md:mb-16 lg:mb-10 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-400">
+                Our Youtube Channel
               </h2>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.youtube.com/@Vigyandarshan"
-                className="group inline-flex items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-red-800 to-red-600 hover:from-red-600 hover:to-red-800 text-white rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 animate-pulse hover:animate-none"
+                className="group inline-flex items-center py-2 sm:py-3 px-4 sm:px-6 bg-gradient-to-r from-red-800 to-red-800 hover:from-red-800 hover:to-red-800 text-white rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 hover:animate-none"
                 aria-label="Subscribe to Vigyan Darshan YouTube Channel"
               >
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg className="w-5 h-5 sm:w-6 sm:h-6 mr-2 group-hover:scale-120" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                 </svg>
-                <span className="text-sm sm:text-base">Subscribe Now</span>
+                <span className="text-sm sm:text-base">Subscribe</span>
               </a>
-            </div>
-            <div className="w-full border-t-2 border-gray-700 my-12 md:my-16 shadow-md"></div>
-          </section>
-          <div className="container mx-auto text-center px-4 mb-8">
-            <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-500">Featured Videos</h2>
+            <h2 className="text-2xl md:text-4xl font-bold text-white mb-6 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-500 mt-10">Featured Videos</h2>
             <p className="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12">Dive deep into our curated content exploring the intersection of science, philosophy and spirituality</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 xl:gap-10 px-4 md:px-6 xl:px-8 max-w-7xl mx-auto">
@@ -123,7 +122,7 @@ export default function Home() {
           <div className="bg-gradient-to-b from-gray-900/50 to-black/50 backdrop-blur-sm">
             <div className="w-full py-8 sm:py-12 md:py-16">
               <div className="container mx-auto px-4">
-                <h2 id="gallery" className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8">
+                <h2 id="gallery" className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500 text-center mb-8">
                   Our Gallery
                 </h2>
                 

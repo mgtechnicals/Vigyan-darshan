@@ -89,7 +89,7 @@ export default function Team() {
           </h2>
 
           <div 
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+            className="p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
             role="list"
           >
             {teamMembers.map((member, index) => (
@@ -103,7 +103,7 @@ export default function Team() {
                   alt={`${member.name} - ${member.role}`}
                   width={250}
                   height={250}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48 object-fit-cover"
                   priority={index < 4} // Prioritize loading first 4 images
                   loading={index < 4 ? 'eager' : 'lazy'}
                   fetchPriority={index < 4 ? 'high' : 'low'}
@@ -114,6 +114,7 @@ export default function Team() {
                   <p className="text-sm text-gray-400">{member.description}</p>
                 </div>
               </div>
+              
             ))}
           </div>
         </div>
@@ -121,3 +122,4 @@ export default function Team() {
     </>
   );
 }
+
