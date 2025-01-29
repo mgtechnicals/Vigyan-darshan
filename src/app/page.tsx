@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
+// import Image from "next/image";
+// import Link from "next/link";
 import type { Metadata } from 'next'
-import Cards from "@/components/Cards";
+// import Cards from "@/components/Cards";
 
 export const metadata: Metadata = {
   title: 'Vigyan Darshan - Exploring Science, Philosophy & Spirituality',
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   },
 }
 
-const featuredImages = [
-  { src: "/img1.jpg", alt: "Gallery Image 1" },
-  { src: "/img2.jpg", alt: "Gallery Image 2" },
-  { src: "/img3.jpg", alt: "Gallery Image 3" },
-];
+// const featuredImages = [
+//   { src: "/img1.jpg", alt: "Gallery Image 1" },
+//   { src: "/img2.jpg", alt: "Gallery Image 2" },
+//   { src: "/img3.jpg", alt: "Gallery Image 3" },
+// ];
 
 export default function Home() {
   return (
