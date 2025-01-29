@@ -1,5 +1,6 @@
 // import Image from "next/image";
 // import Link from "next/link";
+import CommingSoon from '@/components/CommingSoon';
 import type { Metadata } from 'next'
 // import Cards from "@/components/Cards";
 
@@ -160,8 +161,8 @@ export default function Home() {
     //     </div>
     //   </div>
     // </div>
-    <div className="flex">
-        <h1>Comming Soon...</h1>
+    <div className="">
+        <CommingSoon/>
     </div>
   );
 }
