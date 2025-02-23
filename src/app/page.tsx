@@ -37,7 +37,7 @@ export default function Home() {
           backgroundImage: "url('/bg-pattern.png')",
           backgroundSize: '200px 200px'
         }}
-      />
+      />``
       <div className="relative ">
         <div className="flex flex-col items-center pt-16 sm:pt-20 md:pt-28 lg:pt-32">
           <FadeContainer direction="down">
@@ -47,7 +47,7 @@ export default function Home() {
                 alt="Vigyan Darshan Logo - Exploring Science, Philosophy & Spirituality"
                 width={150}
                 height={150}
-                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl transition-transform duration-500 hover:scale-110"
+                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl transition-transform duration-500 hover:s"
                 priority
                 loading="eager"
               />

@@ -15,7 +15,7 @@ const leaderProfile: Member = {
   image: "/photo.jpg",
   name: "Mohit Gaur",
   role: " Director of VDRO and the Founder & CEO of MG Technicals.",
-  description: "He is a multi-disciplinary scholar pursuing a B.S. in AI at IIT Jodhpur and interning at IIT Bombay. With degrees in History and Hindi Literature, he is also studying Sanskrit. His interests span business, science, history, and Indology, aiming to promote Vedic activism in India.",
+description: "Founder & CEO of MG Technicals. He is actively involved in multiple business ventures and has a keen research interest in science, history, and Indology. He is currently pursuing a Bachelor of Science (B.S.) degree in Artificial Intelligence at IIT Jodhpur and working as a Research Intern at IIT Bombay under the guidance of Professor Gopal Dixit. In addition to his technical education, he has completed a Bachelor of Arts and Bachelor of Education (B.A. B.Ed.) in History and Hindi Literature from Maharshi Dayanand Saraswati University (MDSU). He is also pursuing a Master’s degree in Sanskrit through open learning alongside his Regular B.S. degree at IIT Jodhpur. His primary objective is to establish a strong foundation for Vedic activism in India.",
 };
 
 // Rest of the team members

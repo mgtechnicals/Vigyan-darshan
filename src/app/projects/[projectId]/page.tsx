@@ -9,7 +9,7 @@ import { useState } from "react";
 const project = {
   title: "IITB-VDRO'S PVD INTERNSHIP PROGRAM 2025",
   images: [
-    { src: "/P1.jpg", alt: "Project Overview" },
+    { src: "/P1.JPG", alt: "Project Overview" },
     { src: "/P2.jpg", alt: "Research Process" },
     { src: "/P3.jpg", alt: "Project Results" }
   ],

@@ -21,7 +21,7 @@ const projects = [
   {
     id: "project1",
     title: "IITB-VDRO'S PVD INTERNSHIP PROGRAM 2025",
-    image: "/P1.jpg",
+    image: "/P1.JPG",
     description:
       "The Indian Institute of Technology Bombay (IIT-B), in collaboration with the Vigyan Darshan Research Organization (VDRO), is inviting college students, graduates, postgraduates, PhD students, or any other candidates with research skills for a 6-month paid internship program under the guidance of Professor Gopal Dixit.",
     link: "/projects/project1",
