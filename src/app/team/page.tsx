@@ -56,7 +56,7 @@ const additionalMembers: Member[] = [
     image: "/harendra.png",
     name: "Harendra Dudi",
     role: "Chemistry Researcher at VDRO",
-    description: "NET GRF Qualified (All India Rank 103)",
+    description: "NET JRF Qualified (All India Rank 103)",
   },
   {
     image: "/rtm2.jpg",
