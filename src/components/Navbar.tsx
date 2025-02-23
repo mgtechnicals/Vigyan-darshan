@@ -18,7 +18,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-gradient-to-r from-gray-900 via-gray-800 to-black shadow-xl z-50">
+    <nav className="fixed w-full backdrop-blur-[12px] shadow-xl z-50">
       <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo and Brand Name */}
@@ -29,14 +29,14 @@ const Navbar = () => {
                 alt="Logo"
                 width={40}
                 height={40}
-                className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 transition-transform duration-300 group-hover:rotate-180"
+                className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 transition-transform duration-300 group-hover:scale-110"
                 priority
               />
             </div>
             <Link
               href="/"
               onClick={closeMenu}
-              className="ml-3 text-amber-500 text-lg sm:text-xl md:text-2xl font-bold hover:text-amber-300 transition-colors duration-300 tracking-wide"
+              className="ml-3 text-amber-500 text-lg sm:text-xl md:text-2xl font-bold hover:text-amber-400 transition-colors duration-300 tracking-wide"
             >
               Vigyan Darshan
             </Link>
@@ -96,7 +96,7 @@ const Navbar = () => {
                 key={index}
                 href={link.href}
                 onClick={link.name === "Gallery" ? closeMenu : undefined}
-                className="text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-amber-600 transition duration-300 hover:scale-105"
+                className="text-white px-4 py-2 text-sm font-medium hover:text-amber-500 hover:underline transition-colors duration-300"
               >
                 {link.name}
               </Link>
@@ -120,7 +120,7 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   onClick={closeMenu}
-                  className="block px-4 py-2 text-sm text-white hover:bg-amber-600 transition duration-300"
+                  className="block px-4 py-2 text-sm text-white hover:text-amber-500 hover:underline transition-colors duration-300"
                 >
                   {link.name}
                 </Link>

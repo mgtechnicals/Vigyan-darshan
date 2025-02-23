@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Aboutus () {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black">
+    <div className="min-h-screen ">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 mix-blend-overlay"
         style={{
@@ -21,7 +21,7 @@ export default function Aboutus () {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-amber-500 mb-8 sm:mb-12 tracking-wide">
           About Vigyan Darshan
         </h1>
-        <p className="text-center text-gray-300 text-lg mb-12 max-w-3xl mx-auto px-4">
+        <p className="text-center text-amber-400 text-xl mb-12 max-w-3xl mx-auto px-4">
           Where ancient wisdom meets modern science
         </p>
 
@@ -31,14 +31,30 @@ export default function Aboutus () {
               <p className="leading-relaxed">
                 Vigyan Darshan is such an institution where all types of science, from ancient to modern, are discussed logically. From cosmology to philosophy, mathematics to medicine, and psychology to technology, we explore it all—physical to spiritual.
               </p>
+              
+              <p className="leading-relaxed mt-6">
+                Vigyan Darshan is a multidisciplinary group engaged in a wide range of activities, from research to Vedic activism. Our work spans academic research, scientific exploration, and content creation, all aimed at understanding reality from the physical to the spiritual.
+              </p>
+
+              <p className="leading-relaxed mt-6">
+                Our YouTube channel, Vigyan Darshan, presents content covering diverse aspects of existence, integrating scientific, historical, and philosophical perspectives. Similarly, Vigyan Darshan Blogs provide in-depth articles on these subjects, offering well-researched insights in a structured format.
+              </p>
+
+              <p className="leading-relaxed mt-6">
+                Beyond content creation, we are actively involved in academic research projects through our dedicated R&D wing, Vigyan Darshan Research Organization (VDRO).
+              </p>
             </div>
           </div>
 
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition duration-300">
-            <h3 className="text-xl font-semibold text-white mb-4">
-              Video Editing and Voice Over
+            <h3 className="text-2xl font-semibold text-amber-500 mb-4">
+              What is VDRO?
             </h3>
-            <p className="text-gray-300">By Mohit Gaur</p>
+            <div className="prose prose-lg text-gray-300 max-w-none">
+              <p className="leading-relaxed">
+                Vigyan Darshan Research Organization (VDRO) is a registered R&D company working across multiple disciplines, including history, Indology, Physics, Sanskrit, environmental science, healthcare, computer science, defense, aerospace, psychology, and pedagogy. VDRO integrates traditional knowledge with modern innovation, contributing to scientific and technological advancements while maintaining a strong foundation in India&apos;s intellectual and philosophical heritage.
+              </p>
+            </div>
           </div>
 
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition duration-300">
@@ -46,7 +62,7 @@ export default function Aboutus () {
               Contact Us
             </h3>
             <p className="text-gray-300 mb-4">
-              Email: mgtmarketers@gmail.com
+              Email: info@vigyandarshan.com
             </p>
             <Link 
               href="https://instagram.com/vigyandarshan" 

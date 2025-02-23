@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Navbar from "@/components/Navbar";
-// import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,13 +25,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body 
+    <html lang="en" suppressHydrationWarning>
+      <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* <Navbar/> */}
+        <Navbar />
         {children}
-        {/* <Footer/> */}
+        <div className="fixed top-0 -z-10">
+          <div className="absolute inset-50 bg-black/40" />
+          <video autoPlay loop muted className="w-full min-h-screen object-cover">
+            <source src="/Space.mp4" />
+          </video>
+        </div>
+        <Footer />
       </body>
     </html>
   );
