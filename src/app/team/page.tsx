@@ -65,7 +65,7 @@ const additionalMembers: Member[] = [
     description: "Ex Automotive Mechatronics Engineer at mercedes benz",
   },
   {
-    image: "/sunil.jpg",
+    image: "/sunil.JPG",
     name: "Sunil Chaudhary",
     role: "IT System Researcher at VDRO",
     description: "Network Engineer at Data Center of Kotak Bank",
