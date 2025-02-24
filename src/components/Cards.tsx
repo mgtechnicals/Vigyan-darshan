@@ -72,13 +72,13 @@ const Cards = () => {
 
         <button
           onClick={() => setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length)}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-500 p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 text-white"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-amber-700 p-3 rounded-full shadow-lg hover:bg-amber-600 transition-all duration-300 text-white"
         >
           <FaChevronLeft className="text-xl" />
         </button>
         <button
           onClick={() => setCurrentIndex((prev) => (prev + 1) % cards.length)}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-500 p-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 text-white"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-amber-700 p-3 rounded-full shadow-lg hover:bg-amber-600 transition-all duration-300 text-white"
         >
           <FaChevronRight className="text-xl" />
         </button>
