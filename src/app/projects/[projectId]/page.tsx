@@ -15,7 +15,8 @@ const project = {
   ],
   description:
     "The Indian Institute of Technology Bombay (IIT-B), in collaboration with the Vigyan Darshan Research Organization (VDRO), is inviting college students, graduates, postgraduates, PhD students, or any other candidates with research skills for a 6-month paid internship program under the guidance of Professor Gopal Dixit.",
-  details: `Scan Below QR to apply. `,
+  details: `Scan Below QR or Click the button to apply.`,
+  formLink: "https://docs.google.com/forms/d/e/1FAIpQLSdI6nSnwCY0FphUn3Y4Xnb9cechzJWmj9LWmNCWV3Jg_-MMgA/viewform" // Add your Google Form link here
 };
 
 export default function Project1() {
@@ -124,7 +125,7 @@ export default function Project1() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center mt-4">
+        <div className="flex flex-col items-center mt-4 space-y-6">
             <Image
               src="/QRCode.png"
               alt="Application QR Code"
@@ -133,6 +134,28 @@ export default function Project1() {
               className="rounded-lg shadow-lg hover:scale-105 transition-transform"
               priority
             />
+            
+            <a 
+              href={project.formLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className=" bg-amber-500 text-gray-900 px-8 py-4 rounded-lg font-medium text-lg shadow-md hover:bg-amber-600 transition-all transform hover:scale-105 inline-flex items-center space-x-2"
+            >
+              <span>Click here to Apply</span>
+              <svg 
+                className="w-5 h-5" 
+                fill="none" 
+                stroke="currentColor" 
+                viewBox="0 0 24 24"
+              >
+                <path 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth={2} 
+                  d="M14 5l7 7m0 0l-7 7m7-7H3" 
+                />
+              </svg>
+            </a>
         </div>
 
         <div className="mt-20 text-center">

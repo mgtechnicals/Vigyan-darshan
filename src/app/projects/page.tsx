@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const projects = [
   {
-    id: "project1",
+    id: "p1",
     title: "IITB-VDRO'S PVD INTERNSHIP PROGRAM 2025",
     image: "/P1.JPG",
     description:
@@ -27,7 +27,7 @@ const projects = [
     link: "/projects/project1",
   },
   {
-    id: "project2",
+    id: "p2",
     title: "Project 1",
     image: "/.jpg",
     description:
@@ -35,7 +35,7 @@ const projects = [
     link: "/projects/project1",
   },
   {
-    id: "project3",
+    id: "p3",
     title: "Project 1",
     image: "/p.jpg",
     description:
