@@ -132,9 +132,8 @@ const Footer = () => {
               reserved.
             </p>
             <p className="mt-2 transition duration-300 hover:scale-105 hover:text-gray-300 flex items-center justify-center gap-1">
-              Made with{" "}
-              <span className="text-red-500 animate-pulse text-sm">❤</span> in
-              India
+              Made with{" "} MG Technicals
+              <span className="text-red-500 animate-pulse text-sm">❤</span>
             </p>
           </div>
         </div>

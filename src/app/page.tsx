@@ -30,24 +30,24 @@ export default function Home() {
   ]
 
   return (
-    <div className="min-h-screen  from-gray-900 via-gray-800 to-black">
+    <div className="min-h-screen bg-gradient-to-b from-gray-950 via-amber-950/10 to-gray-950">
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-10 mix-blend-overlay"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-5 mix-blend-overlay animate-pulse"
         style={{
           backgroundImage: "url('/bg-pattern.png')",
           backgroundSize: '200px 200px'
         }}
-      />``
+      />
       <div className="relative ">
         <div className="flex flex-col items-center pt-16 sm:pt-20 md:pt-28 lg:pt-32">
           <FadeContainer direction="down">
-            <div className=" hover:animate-none transition-all backdrop-blur-[2px] rounded">
+            <div className="hover:animate-none transition-all backdrop-blur-[2px] rounded-full p-4 bg-amber-500/5 ring-1 ring-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
               <Image
                 src="/logo.png"
                 alt="Vigyan Darshan Logo - Exploring Science, Philosophy & Spirituality"
                 width={150}
                 height={150}
-                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl transition-transform duration-500 hover:s"
+                className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 drop-shadow-2xl transition-all duration-500 hover:scale-105"
                 priority
                 loading="eager"
               />
@@ -64,19 +64,19 @@ export default function Home() {
           </FadeContainer>
         </div>
         <div className="min-h-screen">
-          <section className="py-8 sm:py-10 md:py-16 lg:py-20 text-white bg-gradient-to-b from-gray-900/50 to-black/50 backdrop-blur-sm">
+          <section className="py-8 sm:py-10 md:py-16 lg:py-20 text-white backdrop-blur-sm bg-gradient-to-b from-amber-950/10 via-gray-950 to-gray-950">
             <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-10 items-center justify-center">
-              <iframe
-                width="400"
-                height="400"
-                src={videos[0].src}
-                title={videos[0].title}
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-                loading="lazy"
-                className="w-full h-[20rem] rounded-lg shadow-2xl backdrop-blur-sm bg-black/30 hover:shadow-gray-500/20"
-              ></iframe>
+              <div className="relative w-full max-w-[400px] aspect-video rounded-xl overflow-hidden ring-1 ring-amber-500/20 shadow-[0_0_25px_rgba(245,158,11,0.1)]">
+                <iframe
+                  src={videos[0].src}
+                  title={videos[0].title}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full"
+                ></iframe>
+              </div>
 
               <p className="text-sm sm:text-base md:text-lg lg:text-xl px-4 text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Vigyan Darshan is such an institution where all types of science from ancient to modern will be discussed logically (cosmology to Philoshophy , Mathematical to medical & Psychology to Technology ! we will touch all topic physical to spritual )
@@ -128,43 +128,49 @@ export default function Home() {
           </FadeContainer>
         </div>
         <div className="w-full border-t-2 border-gray-700 my-8 sm:my-10 md:my-12 lg:my-16 xl:my-20 shadow-md"></div>
-        <div className="w-full max-w-7xl mx-auto">
-          <div className="bg-gradient-to-b from-gray-900/50 to-black/50 backdrop-blur-sm">
-            <div className="w-full py-8 sm:py-12 md:py-16">
-              <div className="container mx-auto px-4">
-                <h2 id="gallery" className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500 text-center mb-8">
-                  Our Gallery
-                </h2>
+        <div className="w-full max-w-7xl mx-auto px-4 py-16 bg-gradient-to-b from-gray-950/80 via-amber-950/5 to-gray-950/80 backdrop-blur-md">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 to-amber-700/10 opacity-20 blur-3xl" />
+            <div className="relative">
+              <div className="bg-gradient-to-b from-gray-900/50 to-black/50 backdrop-blur-sm">
+                <div className="w-full py-8 sm:py-12 md:py-16">
+                  <div className="container mx-auto px-4">
+                    <h2 id="gallery" className="text-2xl sm:text-3xl md:text-4xl font-bold text-amber-500 text-center mb-8">
+                      Our Gallery
+                    </h2>
 
-                {/* Responsive Grid Container for Gallery */}
-                <FadeContainer direction="center">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
-                    {featuredImages.map((image, index) => (
-                      <div
-                        key={index}
-                        className="aspect-square relative cursor-pointer group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-                      >
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          fill
-                          className="object-cover transform duration-300 group-hover:scale-110"
-                          sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
-                          priority={index < 2}
-                          quality={85}
-                        />
+                    {/* Responsive Grid Container for Gallery */}
+                    <FadeContainer direction="center">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6 max-w-7xl mx-auto">
+                        {featuredImages.map((image, index) => (
+                          <div
+                            key={index}
+                            className="aspect-square relative cursor-pointer group overflow-hidden rounded-xl ring-1 ring-amber-500/20 shadow-lg hover:shadow-amber-500/10 transition-all duration-500"
+                          >
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
+                            <Image
+                              src={image.src}
+                              alt={image.alt}
+                              fill
+                              className="object-cover transition-transform duration-500 group-hover:scale-110"
+                              sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
+                              priority={index < 2}
+                              quality={85}
+                            />
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                </FadeContainer>
+                    </FadeContainer>
 
-                <div className="text-center mt-8">
-                  <Link
-                    href="/gallery"
-                    className="px-6 py-3 bg-gradient-to-r from-amber-800 to-amber-400 hover:from-amber-500 hover:to-amber-800 text-white rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
-                  >
-                    View Full Gallery
-                  </Link>
+                    <div className="text-center mt-8">
+                      <Link
+                        href="/gallery"
+                        className="px-6 py-3 bg-gradient-to-r from-amber-800 to-amber-400 hover:from-amber-500 hover:to-amber-800 text-white rounded-lg transition duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 inline-block"
+                      >
+                        View Full Gallery
+                      </Link>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

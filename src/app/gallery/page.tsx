@@ -63,36 +63,35 @@ export default function Gallery() {
   };
 
   return (
-    <section className="py-20 ">
+    <section className="py-24 ">
       <div className="container mx-auto px-4">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-center text-amber-500 mb-10 mt-10">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-center bg-gradient-to-r from-amber-600 to-amber-400 bg-clip-text text-transparent mb-6">
           Our Gallery
         </h1>
         
-        <p className="text-center font-serif text-amber-500 text-2xl mb-8">
-          Images: {allImages.length}
+        <p className="text-center font-serif text-amber-500 backdrop:blur-lg text-xl mb-12 italic">
+          Showcasing {allImages.length} Memorable Moments
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {allImages.map((image, index) => (
             <div 
               key={index}
-              className="aspect-square relative cursor-pointer group overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-transform duration-300 hover:scale-105"
+              className="aspect-square relative cursor-pointer group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-1"
               onClick={() => openModal(index)}
             >
               <Image 
                 src={image.src}
                 alt={image.alt}
                 fill
-                className="object-fit transform duration-300 group-hover:scale-110"
+                className="object-cover transform duration-500 group-hover:scale-110"
                 sizes="(max-width: 640px) 90vw, (max-width: 768px) 45vw, (max-width: 1024px) 30vw, 25vw"
                 priority={index < 4}
                 quality={85}
               />
-              {/* Add overlay that appears on hover */}
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <div className="text-white flex items-center gap-2">
-                  <span className="font-medium">View Full Image</span>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-6">
+                <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                  <span className="font-medium text-lg">View Full Image</span>
                 </div>
               </div>
             </div>
@@ -102,30 +101,29 @@ export default function Gallery() {
         {/* Modal */}
         {selectedImageIndex !== null && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+            className="fixed inset-0 bg-black/95 backdrop-blur-sm z-50 flex items-center justify-center p-4"
             onClick={closeModal}
           >
             <div className="relative max-w-7xl max-h-[90vh] w-full h-full">
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-white text-xl bg-black bg-opacity-50 w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-75 transition-all z-10"
+                className="absolute top-4 right-4 text-white text-2xl bg-black/50 w-12 h-12 rounded-full flex items-center justify-center hover:bg-white/20 transition-all z-10"
               >
                 ×
               </button>
               
-              {/* Navigation buttons */}
               <button
                 onClick={showPreviousImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10"
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-4 rounded-full hover:bg-white/20 transition-all z-10"
               >
-                ←
+                <span className="text-2xl">←</span>
               </button>
               
               <button
                 onClick={showNextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black bg-opacity-50 p-2 rounded-full hover:bg-opacity-75 transition-all z-10"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white bg-black/50 p-4 rounded-full hover:bg-white/20 transition-all z-10"
               >
-                →
+                <span className="text-2xl">→</span>
               </button>
 
               <div className="relative w-full h-full">
@@ -136,7 +134,7 @@ export default function Gallery() {
                   className="object-contain"
                   quality={100}
                 />
-                <p className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white bg-black bg-opacity-50 px-4 py-2 rounded-full">
+                <p className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white bg-black/60 px-6 py-3 rounded-full text-lg font-medium tracking-wide">
                   {selectedImageIndex + 1} / {allImages.length}
                 </p>
               </div>
