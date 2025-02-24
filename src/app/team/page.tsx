@@ -103,29 +103,30 @@ export default function Team() {
     );
   };
 
-  // Update the MemberCard component
+  // Add these new styles to the MemberCard component
   const MemberCard = ({ member, index, isExpanded, onToggle }: MemberCardProps) => (
-    <div className="bg-gray-900/50 backdrop-blur-md rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300 h-auto w-full flex flex-col">
-      <div className="w-full h-[250px] relative rounded-lg aspect-square">
+    <div className="bg-gradient-to-b from-gray-900/70 to-gray-800/70 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-amber-500/20 transform hover:scale-102 transition-all duration-300 h-auto w-full flex flex-col border border-gray-700/30">
+      <div className="w-full h-[250px] relative rounded-t-xl overflow-hidden group">
         <Image
           src={member.image}
           alt={`${member.name} - ${member.role}`}
           fill
-          className="object-"
+          className="object-cover transform group-hover:scale-110 transition-transform duration-500"
           priority={index < 4}
           loading={index < 4 ? "eager" : "lazy"}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
-      </div>      
-      <div className="p-4 flex flex-col flex-1">
-        <h3 className="text-base font-bold text-amber-400 mb-1.5 text-center">
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      </div>
+      <div className="p-6 flex flex-col flex-1 relative">
+        <h3 className="text-lg font-bold text-amber-400 mb-2 text-center">
           {member.name}
         </h3>
-        <p className="text-xs text-gray-100 mb-2 text-center">
+        <p className="text-sm text-gray-200 mb-3 text-center font-medium">
           {member.role}
         </p>
         <div className="flex-1 flex flex-col">
-          <p className={`text-xs text-gray-100 text-center ${
+          <p className={`text-sm text-gray-300 text-center leading-relaxed ${
             isExpanded ? "" : "line-clamp-3"
           }`}>
             {member.description}
@@ -133,7 +134,6 @@ export default function Team() {
           {member.description.length > 100 && (
             <button
               onClick={onToggle}
-              className="mt-2 text-amber-400 hover:text-amber-300 text-xs font-medium"
               type="button"
             >
               {isExpanded ? "Read Less" : "Read More"}
@@ -226,15 +226,15 @@ export default function Team() {
               </div>
             </div>
 
-            {/* Update Vertical Divider visibility */}
+            {/* Vertical Divider */}
             <div className="hidden lg:block w-px bg-amber-500/50 self-stretch mx-4" />
 
-            {/* Update Advisory member Section width */}
+            {/* Advisory Members Section */}
             <div className="lg:w-3/4 w-full">
-              <h4 className=" sm:text-3xl font-bold  text-gray-100 mb-10 mt-8 ">
-              Advisory members of VDRO
+              <h4 className="sm:text-3xl font-bold text-gray-100 mb-10 mt-8">
+                Advisory members of VDRO
               </h4>
-              <div className="flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
+              <div className="flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {teamMembers.map((member, index) => (
                   <MemberCard
                     key={index}

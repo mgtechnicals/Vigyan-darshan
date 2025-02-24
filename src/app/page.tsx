@@ -41,7 +41,6 @@ export default function Home() {
       <div className="relative ">
         <div className="flex flex-col items-center pt-16 sm:pt-20 md:pt-28 lg:pt-32">
           <FadeContainer direction="down">
-            <div className="hover:animate-none transition-all backdrop-blur-[2px] rounded-full p-4 bg-amber-500/5 ring-1 ring-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
               <Image
                 src="/logo.png"
                 alt="Vigyan Darshan Logo - Exploring Science, Philosophy & Spirituality"
@@ -51,7 +50,6 @@ export default function Home() {
                 priority
                 loading="eager"
               />
-            </div>
           </FadeContainer>
 
           <FadeContainer direction="up">
