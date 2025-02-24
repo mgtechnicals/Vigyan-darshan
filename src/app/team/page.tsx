@@ -105,7 +105,7 @@ export default function Team() {
 
   // Add these new styles to the MemberCard component
   const MemberCard = ({ member, index, isExpanded, onToggle }: MemberCardProps) => (
-    <div className="bg-gradient-to-b from-gray-900/70 to-gray-800/70 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-amber-500/20 transform hover:scale-102 transition-all duration-300 h-auto w-full flex flex-col border border-gray-700/30">
+    <div className="ml-14 md:ml-0 max-w-[250px] bg-gradient-to-b from-gray-900/70 to-gray-800/70 backdrop-blur-md rounded-xl overflow-hidden shadow-xl hover:shadow-amber-500/20 transform hover:scale-102 transition-all duration-300 h-auto w-full flex flex-col border border-gray-700/30">
       <div className="w-full h-[250px] relative rounded-t-xl overflow-hidden group">
         <Image
           src={member.image}
@@ -182,7 +182,7 @@ export default function Team() {
       {/* First Section - Leader and Team */}
       <section className=" text-white">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-8">
+          <div className="flex flex-col md:flex-row lg:flex-row gap-8">
             {/* Leader Section */}
             <div className="w-full h-auto lg:w-1/4 mx-auto  max-w-[250px]">
               <div className="grid grid-cols-1 gap-8">
@@ -231,7 +231,7 @@ export default function Team() {
 
             {/* Advisory Members Section */}
             <div className="lg:w-3/4 w-full">
-              <h4 className="sm:text-3xl font-bold text-gray-100 mb-10 mt-8">
+              <h4 className="sm:text-3xl font-bold text-gray-100 mb-10 mt-8 underline-offset-auto">
                 Advisory members of VDRO
               </h4>
               <div className="flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -256,7 +256,7 @@ export default function Team() {
           <h4 className="sm:text-3xl font-bold text-center text-amber-500 mb-10 mt-8">
             Research Team of VDRO
           </h4>
-          <div className="flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="ml-1 flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {additionalMembers.map((member, index) => (
               <MemberCard
                 key={index}
