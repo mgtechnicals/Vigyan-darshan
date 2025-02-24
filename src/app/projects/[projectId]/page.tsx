@@ -10,8 +10,8 @@ const project = {
   title: "IITB-VDRO'S PVD INTERNSHIP PROGRAM 2025",
   images: [
     { src: "/P1.JPG", alt: "Project Overview" },
-    { src: "/P2.jpg", alt: "Research Process" },
-    { src: "/P3.jpg", alt: "Project Results" }
+    { src: "/P2.JPG", alt: "Research Process" },
+    { src: "/P3.JPG", alt: "Project Results" }
   ],
   description:
     "The Indian Institute of Technology Bombay (IIT-B), in collaboration with the Vigyan Darshan Research Organization (VDRO), is inviting college students, graduates, postgraduates, PhD students, or any other candidates with research skills for a 6-month paid internship program under the guidance of Professor Gopal Dixit.",
@@ -126,7 +126,7 @@ export default function Project1() {
 
         <div className="flex flex-col items-center mt-4">
             <Image
-              src="/QRCODE.png"
+              src="/QRCode.png"
               alt="Application QR Code"
               width={200}
               height={200}

@@ -28,10 +28,7 @@ export default function Aboutus () {
         <div className="max-w-4xl mx-auto space-y-8">
           <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition duration-300">
             <div className="prose prose-lg text-gray-300 max-w-none">
-              <p className="leading-relaxed">
-                Vigyan Darshan is such an institution where all types of science, from ancient to modern, are discussed logically. From cosmology to philosophy, mathematics to medicine, and psychology to technology, we explore it all—physical to spiritual.
-              </p>
-              
+                    
               <p className="leading-relaxed mt-6">
                 Vigyan Darshan is a multidisciplinary group engaged in a wide range of activities, from research to Vedic activism. Our work spans academic research, scientific exploration, and content creation, all aimed at understanding reality from the physical to the spiritual.
               </p>
