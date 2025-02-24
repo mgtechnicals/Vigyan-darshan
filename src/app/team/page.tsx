@@ -202,7 +202,7 @@ export default function Team() {
                     <h3 className="text-base font-bold text-amber-400 mb-1.5 truncate text-center">
                       {leaderProfile.name}
                     </h3>
-                    <p className="text-xs text-amber-400 mb-2 line-clamp-2 text-center">
+                    <p className="text-xs text-amber-100 mb-2 line-clamp-2 text-center">
                       {leaderProfile.role}
                     </p>
                     <div className="flex-1 flex flex-col text-center">
@@ -230,7 +230,7 @@ export default function Team() {
             <div className="hidden lg:block w-px bg-amber-500/50 self-stretch mx-4" />
 
             {/* Advisory Members Section */}
-            <div className="lg:w-3/4 w-full">
+            <div className="lg:w-3/4 w-full text-center md:text-left">
               <h4 className="sm:text-3xl font-bold text-gray-100 mb-10 mt-8 underline-offset-auto">
                 Advisory members of VDRO
               </h4>
@@ -256,7 +256,7 @@ export default function Team() {
           <h4 className="sm:text-3xl font-bold text-center text-amber-500 mb-10 mt-8">
             Research Team of VDRO
           </h4>
-          <div className="ml-1 flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="sm:ml-10 flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {additionalMembers.map((member, index) => (
               <MemberCard
                 key={index}
