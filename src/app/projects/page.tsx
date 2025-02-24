@@ -24,23 +24,23 @@ const projects = [
     image: "/P1.JPG",
     description:
       "The Indian Institute of Technology Bombay (IIT-B), in collaboration with the Vigyan Darshan Research Organization (VDRO), is inviting college students, graduates, postgraduates, PhD students, or any other candidates with research skills for a 6-month paid internship program under the guidance of Professor Gopal Dixit.",
-    link: "/projects/project1",
+    link: "/projects/IITB-VDRO-INTERNSHIP",
   },
   {
     id: "p2",
-    title: "Project 1",
+    title: "comming soon...",
     image: "/.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.",
-    link: "/projects/project1",
+    link: "",
   },
   {
     id: "p3",
-    title: "Project 1",
+    title: "Comming soon...",
     image: "/p.jpg",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.",
-    link: "/projects/project1",
+    link: "",
   },
   // ...Add other projects similarly
 ];
