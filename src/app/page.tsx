@@ -51,36 +51,37 @@ export default function Home() {
                 loading="eager"
               />
           </FadeContainer>
-
           <FadeContainer direction="up">
             <h1 className="mb-4 text-2xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-3xl font-bold animate-fade-in-down text-center px-4 drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-amber-500 to-amber-300 p-2 backdrop-blur-[2px] hover:scale-105 transition-transform duration-500">
               Vigyan Darshan
             </h1>
           </FadeContainer>
-          <FadeContainer direction="up">
-            <Cards />
-          </FadeContainer>
+            <section className="py-12 sm:py-16 md:py-24 text-white backdrop-blur-sm bg-gradient-to-b from-amber-950/10 via-gray-950 to-gray-950">
+              <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+                <div className="relative w-full md:w-2/3 lg:w-1/2 aspect-video rounded-xl overflow-hidden ring-1 ring-amber-500/20 shadow-[0_0_25px_rgba(245,158,11,0.1)]">
+                  <iframe
+                    src={videos[0].src}
+                    title={videos[0].title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                    className="absolute w-full h-full"
+                  ></iframe>
+                </div>
+
+                <div className="md:w-1/3 lg:w-1/2">
+                  <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed">
+                    Vigyan Darshan is such an institution where all types of science from ancient to modern will be discussed logically (cosmology to Philoshophy, Mathematical to medical & Psychology to Technology! We will touch all topics physical to spiritual).
+                  </p>
+                </div>
+              </div>
+            </section>
         </div>
         <div className="min-h-screen">
-          <section className="py-8 sm:py-10 md:py-16 lg:py-20 text-white backdrop-blur-sm bg-gradient-to-b from-amber-950/10 via-gray-950 to-gray-950">
-            <div className="container mx-auto text-center px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row gap-10 items-center justify-center">
-              <div className="relative w-full max-w-[400px] aspect-video rounded-xl overflow-hidden ring-1 ring-amber-500/20 shadow-[0_0_25px_rgba(245,158,11,0.1)]">
-                <iframe
-                  src={videos[0].src}
-                  title={videos[0].title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full"
-                ></iframe>
-              </div>
-
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl px-4 text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                Vigyan Darshan is such an institution where all types of science from ancient to modern will be discussed logically (cosmology to Philoshophy , Mathematical to medical & Psychology to Technology ! we will touch all topic physical to spritual )
-              </p>
-            </div>
-          </section>
+        <FadeContainer direction="up">
+            <Cards />
+          </FadeContainer>
           <div className="w-full border-t-2 border-gray-700 my-12 md:my-16 shadow-md"></div>
           <div className="container mx-auto text-center px-1 mb-8">
             <FadeContainer direction="up">
@@ -107,7 +108,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8 xl:gap-10 px-4 md:px-6 xl:px-8 max-w-7xl mx-auto">
               {videos.map((video, index) => {
                 return (
-                  <div key={index} className="w-full aspect-square transition-all duration-300 hover:scale-105 hover:rotate-1">
+                  <div key={index} className="w-full aspect-video xl:aspect-[4/3] 2xl:aspect-square transition-all duration-300 hover:scale-105 hover:rotate-1">
                     <iframe
                       width="400"
                       height="400"
