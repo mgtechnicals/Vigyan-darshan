@@ -31,7 +31,7 @@ const projects = [
     title: "comming soon...",
     image: "/.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.",
+      "comming Soon...",
     link: "",
   },
   {
@@ -39,7 +39,7 @@ const projects = [
     title: "Comming soon...",
     image: "/p.jpg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ante at nisi malesuada egestas.",
+      "comming soon...",
     link: "",
   },
   // ...Add other projects similarly
@@ -86,7 +86,7 @@ export default function Projects() {
                 className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300"
                 role="listitem"
               >
-                <div className="w-full aspect-square relative overflow-hidden">
+                <div className=" ml:10 w-full aspect-square relative overflow-hidden">
                   <Image
                     src={project.image}
                     alt={`${project.title} preview`}

@@ -14,8 +14,8 @@ interface Member {
 const leaderProfile: Member = {
   image: "/photo.jpg",
   name: "Mohit Gaur",
-  role: " Director of VDRO and the Founder & CEO of MG Technicals.",
-description: "Founder & CEO of MG Technicals. He is actively involved in multiple business ventures and has a keen research interest in science, history, and Indology. He is currently pursuing a Bachelor of Science (B.S.) degree in Artificial Intelligence at IIT Jodhpur and working as a Research Intern at IIT Bombay under the guidance of Professor Gopal Dixit. In addition to his technical education, he has completed a Bachelor of Arts and Bachelor of Education (B.A. B.Ed.) in History and Hindi Literature from Maharshi Dayanand Saraswati University (MDSU). He is also pursuing a Master’s degree in Sanskrit through open learning alongside his Regular B.S. degree at IIT Jodhpur. His primary objective is to establish a strong foundation for Vedic activism in India.",
+  role: "Researcher, Vedic activist, Entrepreneur",
+description: "Director of VDRO and the Founder & CEO of MG Technicals. Founder & CEO of MG Technicals. He is actively involved in multiple business ventures and has a keen research interest in science, history, and Indology. He is currently pursuing a Bachelor of Science (B.S.) degree in Artificial Intelligence at IIT Jodhpur and working as a Research Intern at IIT Bombay under the guidance of Professor Gopal Dixit. In addition to his technical education, he has completed a Bachelor of Arts and Bachelor of Education (B.A. B.Ed.) in History and Hindi Literature from Maharshi Dayanand Saraswati University (MDSU). He is also pursuing a Master’s degree in Sanskrit through open learning alongside his Regular B.S. degree at IIT Jodhpur. His primary objective is to establish a strong foundation for Vedic activism in India.",
 };
 
 // Rest of the team members
@@ -132,7 +132,7 @@ export default function Team() {
             {member.description}
           </p>
           {member.description.length > 100 && (
-            <button
+            <button className="text-amber-400 mt-4 mb-0"
               onClick={onToggle}
               type="button"
             >
@@ -202,7 +202,7 @@ export default function Team() {
                     <h3 className="text-base font-bold text-amber-400 mb-1.5 truncate text-center">
                       {leaderProfile.name}
                     </h3>
-                    <p className="text-xs text-amber-100 mb-2 line-clamp-2 text-center">
+                    <p className="text-xs text-amber-400 mb-2 line-clamp-2 text-center">
                       {leaderProfile.role}
                     </p>
                     <div className="flex-1 flex flex-col text-center">
