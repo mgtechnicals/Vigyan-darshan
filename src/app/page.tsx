@@ -72,7 +72,7 @@ export default function Home() {
 
                 <div className="md:w-1/3 lg:w-1/2">
                   <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 leading-relaxed">
-                    Vigyan Darshan is such an institution where all types of science from ancient to modern will be discussed logically (cosmology to Philoshophy, Mathematical to medical & Psychology to Technology! We will touch all topics physical to spiritual).
+                  Vigyan Darshan is a multidisciplinary group engaged in a wide range of activities, from research to Vedic activism. Our work spans academic research, scientific exploration, and content creation, all aimed at understanding reality from the physical to the spiritual
                   </p>
                 </div>
               </div>
