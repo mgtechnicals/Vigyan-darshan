@@ -56,7 +56,7 @@ const additionalMembers: Member[] = [
     image: "/harendra.png",
     name: "Harendra Dudi",
     role: "Chemistry Researcher at VDRO",
-    description: "NET JRF Qualified (All India Rank 103)",
+    description: "NET JRF Qualified\nGATE Qualified",
   },
   {
     image: "/rtm2.jpg",
@@ -126,7 +126,7 @@ export default function Team() {
           {member.role}
         </p>
         <div className="flex-1 flex flex-col">
-          <p className={`text-sm text-gray-300 text-center leading-relaxed ${
+          <p className={`text-sm text-gray-300 text-center leading-relaxed whitespace-pre-line ${
             isExpanded ? "" : "line-clamp-3"
           }`}>
             {member.description}
