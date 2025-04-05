@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="flex items-center justify-center md:justify-start group mb-4">
               <div className="animate-bounce hover:animate-none">
                 <Image
-                  src="/logo.png"
+                  src="/logos/logo.png"
                   alt="Logo"
                   width={40}
                   height={40}

@@ -25,7 +25,7 @@ const Navbar = () => {
           <div className="flex items-center group">
             <div className="relative">
               <Image
-                src="/logo.png"
+                src="/logos/logo.png"
                 alt="Logo"
                 width={40}
                 height={40}
