@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Our Projects | Vigyan Darshan",
     description: "Explore our innovative projects in science and technology",
-    images: ["/project1.jpg"],
+    images: ["/P1.jpg"],
   },
   robots: {
     index: true,
@@ -21,7 +21,7 @@ const projects = [
   {
     id: "p1",
     title: "IITB-VDRO'S PVD INTERNSHIP PROGRAM 2025",
-    image: "/P1.JPG",
+    image: "/Projects/P1.JPG",
     description:
       "The Indian Institute of Technology Bombay (IIT-B), in collaboration with the Vigyan Darshan Research Organization (VDRO), is inviting college students, graduates, postgraduates, PhD students, or any other candidates with research skills for a 6-month paid internship program under the guidance of Professor Gopal Dixit.",
     link: "/projects/IITB-VDRO-INTERNSHIP",

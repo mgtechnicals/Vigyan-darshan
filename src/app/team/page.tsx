@@ -12,7 +12,7 @@ interface Member {
 
 // Separate Mohit's profile
 const leaderProfile: Member = {
-  image: "/photo.jpg",
+  image: "/Profiles/photo.jpg",
   name: "Mohit Gaur",
   role: "Researcher, Vedic activist, Entrepreneur",
 description: "Director of VDRO and the Founder & CEO of MG Technicals. He is actively involved in multiple business ventures and has a keen research interest in science, history, and Indology. He is currently pursuing a Bachelor of Science (B.S.) degree in Artificial Intelligence at IIT Jodhpur and working as a Research Intern at IIT Bombay under the guidance of Professor Gopal Dixit. In addition to his technical education, he has completed a Bachelor of Arts and Bachelor of Education (B.A. B.Ed.) in History and Hindi Literature from Maharshi Dayanand Saraswati University (MDSU). He is also pursuing a Master’s degree in Sanskrit through open learning alongside his Regular B.S. degree at IIT Jodhpur. His primary objective is to establish a strong foundation for Vedic activism in India.",
@@ -21,27 +21,27 @@ description: "Director of VDRO and the Founder & CEO of MG Technicals. He is act
 // Rest of the team members
 const teamMembers: Member[] = [
   {
-    image: "/profGmorya.jpg",
+    image: "/Profiles/profGmorya.jpg",
     name: "Dr RGovindM",
     role: " Mentor of the Research Team at VDRO | PhD, IIT Bombay",
     description: "Postdoctoral Fellow, Department of Energy Science and Engineering, IIT Bombay",
   },
   {
-    image: "/shri.png",
+    image: "/Profiles/shri.png",
     name: "Dr. Shri Gupta",
     role: "Mentor of Research team at VDRO | Scientist, Electrical Engineer, PhD from Cornell University USA",
     description:
       "Dr. Shri Gupta, PhD in Electrical Engineering from Cornell, is a former research scientist and senior manager at Digital and Motorola across India, Europe, and North America. Now based in Florida, he is a Six Sigma consultant with a keen interest in Vedanta and alternative healing. He actively supports IHU and Siddha-Vetha Multiversity, promoting natural health and youth development programs.",
   },
   {
-    image: "/sanjayji.png",
+    image: "/Profiles/sanjayji.png",
     name: "Shri Sanjay Kumar",
     role: "Mentor of the Research Team at VDRO, आयुर्वेदज्ञ, Vaidik Scholar & Allopathic Pharmacist",
     description:
       "Sanjay Kumar is deeply interested in Traditional Ayurveda, focusing on the Charaka Samhita, Sushruta Samhita, and other Vedic scriptures, aiming to preserve and share their ancient wisdom.",
   },
   {
-    image: "/jk.jpg",
+    image: "/Profiles/jk.jpg",
     name: "Jitendra Khanna",
     role: "Retired Editor from WHO at Geneva, Switzerland",
     description:
@@ -53,36 +53,48 @@ const teamMembers: Member[] = [
 // Add new team members array at the top with existing arrays
 const additionalMembers: Member[] = [
   {
-    image: "/harendra.png",
+    image: "/Profiles/harendra.png",
     name: "Harendra Dudi",
     role: "Chemistry Researcher at VDRO",
     description: "NET JRF Qualified\nGATE Qualified",
   },
   {
-    image: "/rtm2.jpg",
+    image: "/Profiles/rtm2.jpg",
     name: "Punit Arya",
     role: "Automobile Researcher at VDRO",
     description: "Ex Automotive Mechatronics Engineer at mercedes benz",
   },
   {
-    image: "/sunil.JPG",
+    image: "/Profiles/sunil.JPG",
     name: "Sunil Chaudhary",
     role: "IT System Researcher at VDRO",
     description: "Network Engineer at Data Center of Kotak Bank",
   },
   {
-    image: "/kartik1.jpg",
+    image: "/Profiles/kartik1.jpg",
     name: "Kartik Iyer",
     role: "Resarcher of vedic studies at VDRO",
     description: "MA Sanskrit, Acharya (Sahitya), UGC NET-SET Sanskrit",
   },
   {
-    image: "/ankit.png",
+    image: "/Profiles/ankit.png",
     name: "Ankit Jangid",
     role: "Software Developer at VDRO and Full Stack web Developer.",
     description: "Bachelor of Engineering in Computer Science and Engineering",
   },
-  
+  {
+    image: "/Profiles/pruthviraj.jpeg",
+    name: "Pirthviraj Gadhvi",
+    role: "Jyotishshastra Researcher at VDRO.",
+    description: "Jyotirgyata from hemchandracharya north  gujrat university",
+  },
+  {
+    image: "/Profiles/manish.jpeg",
+    name: "Manish Kumar",
+    role: "Sanskrit Vyakran Researcher at VDRO.",
+    description: "M.A (Sanskrit), N.E.T. with J.R.F. from U.G.C. Delhi (2018)",
+  },
+   
   // Add more members as needed
 ];
 
@@ -259,7 +271,7 @@ export default function Team() {
           <h4 className="sm:text-3xl font-bold text-center text-amber-500 mb-10 mt-8">
             Research Team of VDRO
           </h4>
-          <div className="sm:ml-10 flex lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div className="grid sm:ml-10 lg:flex-row flex-col sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {additionalMembers.map((member, index) => (
               <MemberCard
                 key={index}
