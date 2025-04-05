@@ -32,7 +32,7 @@ const QRCodeImage = () => {
   return (
     <div className="bg-white p-6 rounded-xl shadow-2xl inline-block">
       <Image
-        src="/QRCode.png"
+        src="/Projects/QRCode.png"
         alt="Application QR Code"
         width={200}
         height={200}

@@ -86,7 +86,7 @@ const additionalMembers: Member[] = [
     image: "/Profiles/pruthviraj.jpeg",
     name: "Pirthviraj Gadhvi",
     role: "Jyotishshastra Researcher at VDRO.",
-    description: "Jyotirgyata from hemchandracharya north  gujrat university",
+    description: "Jyotirgyata from Hemchandracharya North  Gujrat University",
   },
   {
     image: "/Profiles/manish.jpeg",

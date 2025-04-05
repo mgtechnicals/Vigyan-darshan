@@ -16,9 +16,9 @@ export const metadata: Metadata = {
 }
 
 const featuredImages = [
-  { src: "/img1.jpg", alt: "Gallery Image 1" },
-  { src: "/img2.jpg", alt: "Gallery Image 2" },
-  { src: "/img3.jpg", alt: "Gallery Image 3" },
+  { src: "/Gallery/18.jpg", alt: "Image 18" },
+  { src: "/Gallery/19.jpg", alt: "Image 29" },
+  { src: "/Gallery/26.jpg", alt: "Image 26" },
 ];
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="flex flex-col items-center pt-16 sm:pt-20 md:pt-28 lg:pt-32">
           <FadeContainer direction="down">
               <Image
-                src="/logo.png"
+                src="/logos/logo.png"
                 alt="Vigyan Darshan Logo - Exploring Science, Philosophy & Spirituality"
                 width={150}
                 height={150}
