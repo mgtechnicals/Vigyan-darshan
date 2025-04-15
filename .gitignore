@@ -1,0 +1,23 @@
+node_modules
+.next
+.env
+# next-video
+videos/*
+!videos/*.json
+!videos/*.js
+!videos/*.ts
+public/_next-video
+
+# next-video
+yes/*
+!yes/*.json
+!yes/*.js
+!yes/*.ts
+public/_next-video
+
+# next-video
+y/*
+!y/*.json
+!y/*.js
+!y/*.ts
+public/_next-video
