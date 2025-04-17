@@ -7,32 +7,32 @@ import Image from "next/image"
 const blogs = [
   {
     id: 1,
-    title: "Understanding React Server Components",
-    description: "Dive into how React Server Components work and how they can optimize your app.",
+    title: "blog post 1",
+    description: "This is a sample blog post description. It provides a brief overview of the content.",
     date: "April 10, 2025",
     author: "John Doe",
     href: "#"
   },
   {
     id: 2,
-    title: "Using Shadcn UI with Next.js",
-    description: "A complete guide to setting up and customizing Shadcn UI in your Next.js project.",
+    title: "Blog Post 2",
+    description: " This is another sample blog post description. It provides a brief overview of the content.",
     date: "April 5, 2025",
     author: "Jane Smith",
     href: "#"
   },
   {
     id: 3,
-    title: "Tailwind CSS Tips & Tricks",
-    description: "Learn powerful Tailwind techniques to speed up your development workflow.",
+    title: "Blog Post 3",
+    description: "This is yet another sample blog post description. It provides a brief overview of the content.",
     date: "March 28, 2025",
     author: "Alex Ray",
     href: "#"
   },
   {
     id: 3,
-    title: "Tailwind CSS Tips & Tricks",
-    description: "Learn powerful Tailwind techniques to speed up your development workflow.",
+    title: "Blog Post 4",
+    description: "This is yet another sample blog post description. It provides a brief overview of the content.",
     date: "March 28, 2025",
     author: "Alex Ray",
     href: "#"
