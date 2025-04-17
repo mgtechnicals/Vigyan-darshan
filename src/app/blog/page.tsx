@@ -44,7 +44,7 @@ const page = () => {
        <section className="py-16 dark:bg-background">
       <div className="container max-w-6xl mx-auto px-4 mt-12">
         <h2 className="text-3xl font-bold mb-8 text-center text-amber-500">Latest Blog Posts</h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-14 sm:grid-cols-2 lg:grid-cols-4">
           {blogs.map((post) => (
             <Card key={post.id} className="hover:shadow-lg bg-backdrop-blur-sm shadow-md rounded-lg p-4">
               <CardHeader className="flex flex-col items-start mb-4">

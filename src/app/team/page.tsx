@@ -89,11 +89,29 @@ const additionalMembers: Member[] = [
     description: "Jyotirgyata from Hemchandracharya North Gujrat University, BSC Mathematics",
   },
   {
-    image: "/Profiles/manish.jpeg",
+    image: "/Profiles/manishkumar.jpeg",
     name: "Manish Kumar",
     role: "Sanskrit Vyakran Researcher at VDRO.",
     description: "M.A (Sanskrit), N.E.T. with J.R.F. from U.G.C. Delhi (2018)",
   },
+  {
+    image: "/Profiles/utkarsh.jpeg",
+    name: "Utkarsh Singh",
+    role: "Physics Research at VDRO.",
+    description: "B.Tech in ECE",
+  },
+  {
+    image: "/Profiles/pranjal.jpeg",
+    name: "Pranjal Shukla ",
+    role: "Chemistry Researcher at VDRO.",
+    description: "M.Sc Chemistry (From University of Mumbai)",
+  },
+  // {
+  //   image: "/Profiles/manish.jpeg",
+  //   name: "Manish Kumar",
+  //   role: "Sanskrit Vyakran Researcher at VDRO.",
+  //   description: "M.A (Sanskrit), N.E.T. with J.R.F. from U.G.C. Delhi (2018)",
+  // },
    
   // Add more members as needed
 ];
